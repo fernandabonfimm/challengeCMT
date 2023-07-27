@@ -1,0 +1,23 @@
+Questão 2: Um cliente relata que está enfrentando lentidão em um determinado recurso do sistema. Como você abordaria esse problema para identificar a causa raiz e propor uma solução?
+
+Resposta: 
+1° Solicitaria um prit da tela que esta ocorrendo a lentidão, para identificar o erro e poder inspecionar.
+2° Testaria na minha máquina, passo a passo que o cliente fez para ocorrer a lentidão na requisição.
+3° Verificaria os logs de erro do sistema para identificar os erros que estão ocorrendo ao solicitar aquela requisição.
+4° Verificaria no banco de dados se a tabela e colunas que estão sendo utilizadas naquela requisão esta correta e devolvendo os dados corretamente.
+5° Verificaria no código que realiza a requisição e dubagaria ele para entender o'que está ocorrendo.
+
+Questão 3: Um usuário informa que está recebendo uma mensagem de erro ao tentar realizar uma operação específica no sistema. Explique como você investigaria esse problema e quais etapas seguiria para solucioná-lo.
+
+Resposta:
+1° Solicitaria um prit da tela que esta devolvendo a mensagem de erro, para identificar o erro e poder inspecionar.
+2° Testaria na minha máquina, passo a passo que o cliente para entender o por que ocorreu o erro, e identificar se não é um bug.
+3° Durante o teste na minha máquina, inspecionaria a tela onde realiza a requisição para ver os erros de https que esta devolvendo no network
+4° Verificaria os logs de erro que esta ocorrendo ao realizar a requisição
+5° Verificaria o código que realiza a requisição e debugaria ele para entender o'que esta ocorrendo para devolver a mensagem de erro.
+
+Questão 4: Descreva como você lidaria com uma situação em que um usuário encontra um erro desconhecido.
+1° Solicitaria um print da tela que esta devolvendo a mensagem de erro, para identificar qual dos codigos https que é
+2° Testaria na minha máquina os passo a passo que o cliente fez para inspecionar a tela em network e entender o erro e se é um possivel bug.
+3° Verificaria os logs de erro que esta ocorrendo no sistema ao realizar a requisição
+4° Verificaria o codigo e debugaria, além de verificar novas alterações no banco de dados daquela tabela que esta sendo consumida.
