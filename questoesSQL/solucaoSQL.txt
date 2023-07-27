@@ -1,0 +1,41 @@
+Solução da 1° questão de SQL
+
+Tabela Atendimentos: 
+Colunas:
+Pacientes:
+id_paciente,
+nome_paciente,
+tel_paciente,
+email_paciente,
+status_paciente,
+data_nascimento 
+
+Atendimento:
+id_atendimento,
+id_paciente,
+data_atendimento,
+hr_atendimento,
+nome_unidade,
+endereco_unidade,
+cd_especialidade
+
+Prontuário:
+id_prontuario,
+id_paciente,
+id_atendimento,
+descricao_prontuario
+
+a)- Escreva uma consulta SQL 
+SELECT A.*
+FROM Atendimento A
+JOIN Pacientes P ON A.id_paciente = P.id_paciente
+WHERE A.cd_especialidade = 'Neurologia'
+  AND A.data_atendimento >= DATEADD(MONTH, -6, GETDATE())
+
+b)- SELECT P.nome_paciente, 
+       PR.descricao_prontuario,
+       A.data_atendimento
+FROM Prontuario PR
+JOIN Atendimento A ON PR.id_atendimento = A.id_atendimento
+JOIN Pacientes P ON PR.id_paciente = P.id_paciente
+WHERE P.id_paciente = 123
